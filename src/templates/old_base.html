@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block head_title %} Muypicky.com {% endblock head_title %}</title>
+    <meta charset="UTF-8">
+    {% include "snippets/css.html" %}
+</head>
+<body>
+{% include "snippets/nav.html" %}
+
+<div class="container">
+{% block contents %}
+    Hello there..........
+{% endblock contents %}
+</div>
+
+{% include "snippets/js.html" %}
+</body>
+</html>
+<!--{% verbatim %}--> <!--Uncomment this line to check all context variables-->
+<!--{% endverbatim %}-->

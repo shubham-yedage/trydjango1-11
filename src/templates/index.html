@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block head_title %} Welcome || {{ block.super }} {% endblock head_title %}
+{% block contents %}
+{{ block.super }}
+<h1>Hello world</h1>
+<p>Where have you been?</p>
+<p>{{ context_var }}</p>
+
+{% if bool_val %}
+<p>{{ num }}</p>
+{% endif %}
+
+{% for num in nums %}
+<p>
+    {% if num|divisibleby:"2" %}
+    even number
+    {% endif %}
+    {{ num }}
+</p>
+{% endfor %}
+{% endblock contents %}

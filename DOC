@@ -1,0 +1,47 @@
+Reference:
+    1. Course:
+            https://www.udemy.com/try-django-v1-11-python-web-development/learn/v4/t/lecture/7604924?start=765
+    2. Docs:
+            https://www.codingforentrepreneurs.com/blog/create-a-blank-django-project/
+
+Default:
+
+trydjango1-11/src/muypick --> Django Configuration Dir --> settings.py
+trydjango1-11/src/ --> Root Django Project --> manage.py
+
+Create project:
+     django-admin.py startproject muypicky .
+
+1. python manage.py migrate --> Sets database (Default db sqlite3)
+2. python manage.py createsuperuser --> Create user()
+
+# Create App or Module
+3.python manage.py startapp restaurants
+
+# restaurants.views to return response
+
+# muypicky.urls to bind url to view
+
+# templates to store html files
+
+# muypicky.settings.base.py specify templates dir path
+
+# Run module
+python manage.py runserver
+
+# Template inheritance
+
+
+# Initial
+pip install psycopg2
+
+pip install gunicorn dj-database-url
+
+pip install django-crispy-formsCollecting django-crispy-forms
+
+pip install pillow
+
+# Create db model and fit model in db
+python manage.py makemigrations
+python manage.py migrate
+
